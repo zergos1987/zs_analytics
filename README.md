@@ -15,7 +15,7 @@ zs_analytics - it's a set of integrated tools for simply and fast creat Full-sta
 
 ## Screenshots
 
-### [Click to see more](https://github.com/zergos1987/zs_analytics/backend/app/media/screenshots)
+### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
 ![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png)
 
 ## Installation
