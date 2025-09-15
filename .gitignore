@@ -187,3 +187,4 @@ cython_debug/
 
 # vscode
 .code-workspace
+zs_analytics.code-workspace
