@@ -1,6 +1,6 @@
 # zs_analytics
 
-zs_analytics - is a set of integrated tools for simply and fast creat Full-stack analysis UI or interact UI.
+zs_analytics - it's a set of integrated tools for simply and fast creat Full-stack analysis UI or interact UI.
 
 ## Features
 
