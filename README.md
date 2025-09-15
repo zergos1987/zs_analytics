@@ -4,19 +4,25 @@ zs_analytics - it's a set of integrated tools for simply and fast creat Full-sta
 
 ## Features
 
-- Custom-User-Model extend base model
-- Authentication with JWT Tokens
+- Backend on Django 
+- Backend includes API endpoints
+- Backend have Custom-User-Model extend base model
+- Backend have dynamic urls (CRUD) with no-code
+- Backend have Authentication with JWT Tokens
+
+- Frontend on iframed Streamlit
+- Frontend have custom UI components
 
 ## Screenshots
 
-### [Click to see more](https://github.com/zergos1987/dj_zs/backend/app/media/screenshots)
-![image](https://github.com/zergos1987/dj_zs/backend/app/media/screenshots/01.png)
+### [Click to see more](https://github.com/zergos1987/zs_analytics/backend/app/media/screenshots)
+![image](https://github.com/zergos1987/zs_analytics/backend/app/media/screenshots/01.png)
 
 ## Installation
 
 1. Clone the repository to use it localy:
 
-        git clone https://github.com/zergos1987/dj_zs.git
+        git clone https://github.com/zergos1987/zs_analytics.git
         
 2. In project folder write command:
 
