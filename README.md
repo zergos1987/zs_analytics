@@ -1,10 +1,12 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="" alt="zs_analytics" width="200"></a>
+  <a href=""><img src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png" alt="zs_analytics" width="200"></a>
   <br>
-  zs_analytics - it's a set of integrated tools for data analysis or low-code site development
+  zs_analytics
   <br>
 </h1>
+
+<h4 align="center">it's a set of integrated tools for data analysis or low-code site development</h4>
 
 ## Features
 
