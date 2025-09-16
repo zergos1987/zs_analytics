@@ -1,6 +1,3 @@
-# zs_analytics
-
-zs_analytics - it's a set of integrated tools for data analysis or low-code site development
 <h1 align="center">
   <br>
   <a href=""><img src="" alt="zs_analytics" width="200"></a>
