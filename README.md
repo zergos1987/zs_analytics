@@ -1,7 +1,13 @@
 # zs_analytics
 
 zs_analytics - it's a set of integrated tools for data analysis or low-code site development
-
+<h1 align="center">
+  <br>
+  <a href=""><img src="" alt="zs_analytics" width="200"></a>
+  <br>
+  zs_analytics - it's a set of integrated tools for data analysis or low-code site development
+  <br>
+</h1>
 
 ## Features
 
@@ -91,7 +97,7 @@ The zs_analytics is licensed under the terms of the MIT License and is available
 
 ## Links
 
-* [Web site](https://zs-analytics.org/)
-* [Documentation](https://zs-analytics.org//docs/)
+* [Web site](https://zs-analytics.com/)
+* [Documentation](https://zs-analytics.com//docs/)
 * [Issue tracker](https://github.com/zergos1987/zs_analytics/issues)
 * [Source code](https://github.com/zergos1987/zs_analytics)
