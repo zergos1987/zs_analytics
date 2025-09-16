@@ -6,7 +6,7 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 ## Features
 
 
-<details><summary>Backend on Django</summary> 
+<details><summary>Tool #1. Backend on Django</summary> 
 
     - Backend includes API endpoints
     - Backend have Custom-User-Model extend base model
@@ -15,45 +15,46 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 
 </details>
 
-<details><summary><b>Frontend on iframed Streamlit</b></summary>
+<details><summary>Tool #2. Frontend on iframed Streamlit</summary>
 
     - Frontend have custom UI components
 
 </details>
 
-<details><summary><b>Database on PostgreSQL/SQLite</b></summary>
+<details><summary>Tool #3. Database on PostgreSQL/SQLite</summary>
 
     - ...
 
 </details>
 
-<details><summary><b>Dashboards on DataLens</b></summary>
+<details><summary>Tool #4. Iframed Dashboards on DataLens</summary>
 
     - ...
 
 </details>
 
-<details><summary><b>Dashboards on Apache Superset</b></summary>
+<details><summary>Tool #5. Iframed Dashboards on Apache Superset</summary>
 
     - ...
 
 </details>
 
-<details><summary><b>ETL on Apache Airflow</b></summary>
+<details><summary>ETL on Apache Airflow</summary>
 
     - ...
 
 </details>
 
-<details><summary><b>Caching on Redis</b></summary>
+<details><summary>Caching on Redis</summary>
 
     - ...
 
 </details>
 
-<details><summary><b>Docker for each tool in zs_analytics</b></summary>
+<details><summary>Deployment</summary>
 
     - Docker containers for every tools in zs_analytics
+    - Nginx as webserver
 
 </details>
 
