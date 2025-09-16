@@ -51,7 +51,7 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 
 </details>
 
-<details><summary>Deployment</summary>
+<details><summary>Tool #8. Deployment on Docker and Nginx</summary>
 
     - Docker containers for every tools in zs_analytics
     - Nginx as webserver
@@ -84,3 +84,14 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 3. Run backend command (User: admin, password: dj_zs12345):
 
         python app/manage.py runserver
+
+## License
+
+The zs_analytics is licensed under the terms of the MIT License and is available for free.
+
+## Links
+
+* [Web site](https://zs-analytics.org/)
+* [Documentation](https://zs-analytics.org//docs/)
+* [Issue tracker](https://github.com/zergos1987/zs_analytics/issues)
+* [Source code](https://github.com/zergos1987/zs_analytics)
