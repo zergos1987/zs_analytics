@@ -4,6 +4,8 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 
 ## Features
 
+- Docker containers for every tools in zs_analytics
+
 - Backend on Django 
 - Backend includes API endpoints
 - Backend have Custom-User-Model extend base model
@@ -12,6 +14,16 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 
 - Frontend on iframed Streamlit
 - Frontend have custom UI components
+
+- Database on PostgreSQL/SQLite
+
+- Dashboards on DataLens
+
+- Dashboards on Apache Superset
+
+- ETL on Apache Airflow
+
+- Caching on Redis
 
 ## Screenshots
 
