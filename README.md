@@ -8,7 +8,18 @@
 
 <h4 align="center">it's a set of integrated tools for data analysis or low-code site development</h4>
 
-## Features
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#license">License</a> •
+  <a href="#links">Links</a>
+</p>
+
+![screenshot](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png)
+
+
+## Key Features
 
 
 <details><summary>Tool #1. Backend on Django</summary> 
