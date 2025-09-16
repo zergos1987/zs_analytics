@@ -6,7 +6,7 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 ## Features
 
 
-<details><summary><b>Backend on Django</b></summary> 
+<details><summary>Backend on Django</summary> 
 
     - Backend includes API endpoints
     - Backend have Custom-User-Model extend base model
