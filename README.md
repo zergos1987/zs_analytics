@@ -27,25 +27,25 @@ zs_analytics - it's a set of integrated tools for data analysis or low-code site
 
 </details>
 
-<details><summary>Tool #4. Iframed Dashboards on DataLens</summary>
+<details><summary>Tool #4. Iframed dashboards on DataLens</summary>
 
     - ...
 
 </details>
 
-<details><summary>Tool #5. Iframed Dashboards on Apache Superset</summary>
+<details><summary>Tool #5. Iframed dashboards on Apache Superset</summary>
 
     - ...
 
 </details>
 
-<details><summary>ETL on Apache Airflow</summary>
+<details><summary>Tool #6. ETL on Apache Airflow</summary>
 
     - ...
 
 </details>
 
-<details><summary>Caching on Redis</summary>
+<details><summary>Tool #7. Caching on Redis</summary>
 
     - ...
 
