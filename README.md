@@ -2,33 +2,67 @@
 
 zs_analytics - it's a set of integrated tools for data analysis or low-code site development
 
+
 ## Features
 
-- Docker containers for every tools in zs_analytics
 
-- Backend on Django 
-- Backend includes API endpoints
-- Backend have Custom-User-Model extend base model
-- Backend have dynamic urls (CRUD) with no-code
-- Backend have Authentication with JWT Tokens
+<details><summary><b>Backend on Django</b></summary> 
 
-- Frontend on iframed Streamlit
-- Frontend have custom UI components
+    - Backend includes API endpoints
+    - Backend have Custom-User-Model extend base model
+    - Backend have dynamic urls (CRUD) with no-code
+    - Backend have Authentication with JWT Tokens
 
-- Database on PostgreSQL/SQLite
+</details>
 
-- Dashboards on DataLens
+<details><summary><b>Frontend on iframed Streamlit</b></summary>
 
-- Dashboards on Apache Superset
+    - Frontend have custom UI components
 
-- ETL on Apache Airflow
+</details>
 
-- Caching on Redis
+<details><summary><b>Database on PostgreSQL/SQLite</b></summary>
+
+    - ...
+
+</details>
+
+<details><summary><b>Dashboards on DataLens</b></summary>
+
+    - ...
+
+</details>
+
+<details><summary><b>Dashboards on Apache Superset</b></summary>
+
+    - ...
+
+</details>
+
+<details><summary><b>ETL on Apache Airflow</b></summary>
+
+    - ...
+
+</details>
+
+<details><summary><b>Caching on Redis</b></summary>
+
+    - ...
+
+</details>
+
+<details><summary><b>Docker for each tool in zs_analytics</b></summary>
+
+    - Docker containers for every tools in zs_analytics
+
+</details>
+
 
 ## Screenshots
 
 ### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
 ![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png)
+
 
 ## Installation
 
