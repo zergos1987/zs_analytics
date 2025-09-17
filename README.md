@@ -20,8 +20,8 @@
 
 
 <details><summary>Tool #1. Backend on Django</summary> 
-&nbsp;
-    - Backend includes API endpoints
+<br />
+    **Backend includes API endpoints**
     <p align="center">
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
 &nbsp;
