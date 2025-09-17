@@ -20,15 +20,12 @@
 
 
 <details><summary>Tool #1. Backend on Django</summary> 
-
-    - Backend includes API endpoints
-    <p align="center">
+    <p align="center">- Backend includes API endpoints
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
 &nbsp;
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
     </p>
-    - Backend have Custom-User-Model extend base model
-    <p align="center">
+    <p align="center">- Backend have Custom-User-Model extend base model
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
 &nbsp;
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
