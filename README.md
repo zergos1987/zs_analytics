@@ -22,7 +22,17 @@
 <details><summary>Tool #1. Backend on Django</summary> 
 
     - Backend includes API endpoints
+    <p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    </p>
     - Backend have Custom-User-Model extend base model
+    <p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    </p>
     - Backend have dynamic urls (CRUD) with no-code
     - Backend have Authentication with JWT Tokens
 
@@ -74,7 +84,7 @@
 
 ## Screenshots
 
-### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
+## [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
 ![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png)
 
 
