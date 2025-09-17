@@ -20,30 +20,29 @@
 
 
 <details><summary>Tool #1. Backend on Django</summary> 
-<br />
-    <h5>Backend includes API endpoints</h5>
+    <h5>- Backend includes API endpoints:</h5>
     <p align="center">
-    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="apis"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info1"/>
 &nbsp;
-    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="data-models"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info2"/>
     </p>
-    - Backend have Custom-User-Model extend base model
+    - Backend have Custom-User-Model extend base model</h5>
     <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info3"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info4"/>
     </p>
-    - Backend have dynamic urls (CRUD) with no-code
+    <h5>- Backend have dynamic urls (CRUD) with no-code</h5>
     <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info5"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info6"/>
     </p>
-    - Backend have Authentication with JWT Tokens
+    <h5>- - Backend have Authentication with JWT Tokens</h5>
     <p align="center">
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info7"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info8"/>
     </p>
 </details>
 
