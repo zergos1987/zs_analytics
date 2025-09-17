@@ -21,7 +21,7 @@
 
 <details><summary>Tool #1. Backend on Django</summary> 
 <br />
-    <p>Backend includes API endpoints</p>
+    <h3>Backend includes API endpoints</h3>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="apis"/>
 &nbsp;
