@@ -117,11 +117,9 @@
 
 1. zs_analytics requires Docker to be installed. Follow these instructions depending on the platform you use:
 
-        - [macOS](https://docs.docker.com/desktop/install/mac-install/)
-        
-        - [Linux](https://docs.docker.com/engine/install/)
-        
-        - [Windows](https://docs.docker.com/desktop/install/windows-install/)
+    - [macOS](https://docs.docker.com/desktop/install/mac-install/)
+    - [Linux](https://docs.docker.com/engine/install/)
+    - [Windows](https://docs.docker.com/desktop/install/windows-install/)
 
 2. ...:
 
