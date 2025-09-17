@@ -115,17 +115,19 @@
 
 ## Installation
 
-1. Clone the repository to use it localy:
+1. zs_analytics requires Docker to be installed. Follow these instructions depending on the platform you use:
 
-        git clone https://github.com/zergos1987/zs_analytics.git
-        
+        - [macOS](https://docs.docker.com/desktop/install/mac-install/)
+        - [Linux](https://docs.docker.com/engine/install/)
+        - [Windows](https://docs.docker.com/desktop/install/windows-install/)
+
 2. ...:
 
         ...
 
 ## License
 
-The zs_analytics is licensed under the terms of the MIT License and is available for free.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
 
 ## Links
 
