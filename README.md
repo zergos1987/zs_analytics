@@ -20,6 +20,7 @@
 
 
 <details><summary>Tool #1. Backend on Django</summary> 
+&nbsp;
     - Backend includes API endpoints
     <p align="center">
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
@@ -33,8 +34,17 @@
     <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
     </p>
     - Backend have dynamic urls (CRUD) with no-code
+    <p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    </p>
     - Backend have Authentication with JWT Tokens
-
+    <p align="center">
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/9908a54a-7d49-4dbb-8f5e-3e99b7cadf30.png" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    </p>
 </details>
 
 <details><summary>Tool #2. Frontend on iframed Streamlit</summary>
