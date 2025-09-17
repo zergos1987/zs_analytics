@@ -3,7 +3,7 @@
   <a href=""><img src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/logo.png" alt="zs_analytics" width="500"></a>
 </h1>
 
-<h4 align="center">it's a set of integrated tools for data analysis or low-code site development</h4>
+<h4 align="center">it's a set of integrated tools for data analysis or low-code site development.</h4>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -118,7 +118,7 @@
 
 ## Screenshots
 
-## [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
+#### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
 ![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png)
 
 
