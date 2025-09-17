@@ -13,7 +13,7 @@
   <a href="#links">Links</a>
 </p>
 
-![screenshot](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png)
+![screenshot](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png)
 
 
 ## Key Features
