@@ -127,11 +127,11 @@
 
 3. Running containers:
 
-    dev mode
+    `dev mode`
 
         docker compose up
 
-    prod mode
+    `prod mode`
 
         docker compose up
 
