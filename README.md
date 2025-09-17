@@ -75,7 +75,7 @@
 ## Screenshots
 
 ### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
-![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/01.png)
+![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png)
 
 
 ## Installation
