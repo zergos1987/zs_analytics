@@ -7,7 +7,6 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#screenshots">Screenshots</a> •
   <a href="#installation">Installation</a> •
   <a href="#license">License</a> •
   <a href="#links">Links</a>
@@ -56,7 +55,7 @@
 </details>
 
 <details><summary>Tool #3. Database on PostgreSQL/SQLite</summary>
-    <h5>- ...</h5>
+    <h5>- ...:</h5>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info11"/>
 &nbsp;
@@ -65,7 +64,7 @@
 </details>
 
 <details><summary>Tool #4. Iframed dashboards on DataLens</summary>
-    <h5>- ...</h5>
+    <h5>- ...:</h5>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info13"/>
 &nbsp;
@@ -74,7 +73,7 @@
 </details>
 
 <details><summary>Tool #5. Iframed dashboards on Apache Superset</summary>
-    <h5>- ...</h5>
+    <h5>- ...:</h5>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info15"/>
 &nbsp;
@@ -83,7 +82,7 @@
 </details>
 
 <details><summary>Tool #6. ETL on Apache Airflow</summary>
-    <h5>- ...</h5>
+    <h5>- ...:</h5>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info17"/>
 &nbsp;
@@ -92,7 +91,7 @@
 </details>
 
 <details><summary>Tool #7. Caching on Redis</summary>
-    <h5>- ...</h5>
+    <h5>- ...:</h5>
     <p align="center">
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info19"/>
 &nbsp;
@@ -114,13 +113,6 @@
     <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="info24"/>
     </p>
 </details>
-
-
-## Screenshots
-
-#### [Click to see more](https://github.com/zergos1987/zs_analytics/tree/zs_analytics/backend/app/media/screenshots)
-![image](https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png)
-
 
 ## Installation
 
