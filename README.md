@@ -125,12 +125,13 @@
 
         git clone https://github.com/zergos1987/zs_analytics && cd zs_analytics
 
-3. Running containers (dev mode):
-    dev mode
+3. Running containers:
+
+    - dev mode
 
         docker compose up
-        
-    prod mode
+
+    - prod mode
 
         docker compose up
 
