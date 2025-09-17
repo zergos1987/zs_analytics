@@ -121,9 +121,13 @@
     - [Linux](https://docs.docker.com/engine/install/)
     - [Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-2. ...:
+2. Clone repository:
 
-        ...
+        git clone https://github.com/zergos1987/zs_analytics && cd zs_analytics
+
+3. Running containers:
+
+        docker compose up
 
 ## License
 
