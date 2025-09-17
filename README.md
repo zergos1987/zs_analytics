@@ -21,11 +21,11 @@
 
 <details><summary>Tool #1. Backend on Django</summary> 
 <br />
-    - Backend includes API endpoints
+    <p>Backend includes API endpoints</p>
     <p align="center">
-    <img width="49%" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="apis"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="apis"/>
 &nbsp;
-    <img width="49%" src="https://github.com/amplication/amplication/assets/73097785/ff406403-27f7-42b5-9569-d011432f16e5.png" alt="data-models"/>
+    <img width="49%" src="https://github.com/zergos1987/zs_analytics/blob/zs_analytics/backend/app/media/screenshots/dash_main.png" alt="data-models"/>
     </p>
     - Backend have Custom-User-Model extend base model
     <p align="center">
