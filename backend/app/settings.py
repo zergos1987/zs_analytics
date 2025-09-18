@@ -31,11 +31,11 @@ SECRET_KEY = os.environ.get("BACKEND_SECRET_KEY")
 DEBUG = config('BACKEND_DEBUG', default=False, cast=bool)
 
 # .env 
-SETTINGS_DIR = str(BASE_DIR.parent) + "/settings/env"
+SETTINGS_DIR = BASE_DIR.parent / "settings" / "env"
 ENV_PROD = '.env'
-SETTINGS_DIR_ENV_PROD = SETTINGS_DIR + '/' + ENV_PROD
+SETTINGS_DIR_ENV_PROD = SETTINGS_DIR / ENV_PROD
 ENV_DEV = '.env.example'
-SETTINGS_DIR_ENV_DEV = SETTINGS_DIR + '/' + ENV_DEV
+SETTINGS_DIR_ENV_DEV = SETTINGS_DIR / ENV_DEV
 
 if os.path.exists(ENV_PROD):
     load_dotenv(ENV_PROD)
@@ -132,7 +132,7 @@ DATABASES = {
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
         'OPTIONS': {
-            #'options': f"-c search_path={config('BACKEND_DJANGO_DB_SCHEMA')}",
+            'options': f"-c search_path={config('BACKEND_DJANGO_DB_SCHEMA')}",
             'connect_timeout': 10, 
             'sslmode': 'require', 
             'client_encoding': 'UTF8',   
@@ -141,7 +141,6 @@ DATABASES = {
         'ATOMIC_REQUESTS': True,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -165,19 +164,22 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+LANGUAGE_CODE = 'ru-ru'
+TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
-
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
