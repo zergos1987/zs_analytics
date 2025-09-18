@@ -39,16 +39,12 @@ SETTINGS_DIR_ENV_DEV = SETTINGS_DIR + '/' + ENV_DEV
 
 if os.path.exists(ENV_PROD):
     load_dotenv(ENV_PROD)
-    print("ENV_PROD")
 elif os.path.exists(SETTINGS_DIR_ENV_PROD):
     load_dotenv(SETTINGS_DIR_ENV_PROD)
-    print("SETTINGS_DIR_ENV_PROD")
 elif os.path.exists(ENV_DEV):
     load_dotenv(ENV_DEV)
-    print("ENV_DEV")
 elif os.path.exists(SETTINGS_DIR_ENV_DEV):
     load_dotenv(SETTINGS_DIR_ENV_DEV)
-    print("SETTINGS_DIR_ENV_DEV")
     
 
 ALLOWED_HOSTS = [
