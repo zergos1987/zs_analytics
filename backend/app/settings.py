@@ -10,23 +10,70 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+from decouple import config, Csv
+import dj_database_url
+from pathlib import Path
+from dotenv import load_dotenv
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7_j5(gka9_tos46*62nnoro^@5wqntq=1_c7vm%$dgh50wzd8f'
+SECRET_KEY = os.environ.get("BACKEND_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('BACKEND_DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+# .env 
+SETTINGS_DIR = str(BASE_DIR.parent) + "/settings/env"
+ENV_PROD = '.env'
+SETTINGS_DIR_ENV_PROD = SETTINGS_DIR + '/' + ENV_PROD
+ENV_DEV = '.env.example'
+SETTINGS_DIR_ENV_DEV = SETTINGS_DIR + '/' + ENV_DEV
 
+if os.path.exists(ENV_PROD):
+    load_dotenv(ENV_PROD)
+    print("ENV_PROD")
+elif os.path.exists(SETTINGS_DIR_ENV_PROD):
+    load_dotenv(SETTINGS_DIR_ENV_PROD)
+    print("SETTINGS_DIR_ENV_PROD")
+elif os.path.exists(ENV_DEV):
+    load_dotenv(ENV_DEV)
+    print("ENV_DEV")
+elif os.path.exists(SETTINGS_DIR_ENV_DEV):
+    load_dotenv(SETTINGS_DIR_ENV_DEV)
+    print("SETTINGS_DIR_ENV_DEV")
+else:
+    print("SSSSSSSSSSSSSSSSSS")
+    
+
+ALLOWED_HOSTS = [
+    v.strip() for v in 
+    os.environ.get("BACKEND_ALLOWED_HOSTS", "").split(",") 
+    if v.strip()
+]
+
+# Settings for working behind (nginx)
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Settings CSRF and sessions
+CSRF_TRUSTED_ORIGINS = [
+    v.strip() for v in 
+    os.environ.get("BACKEND_CSRF_TRUSTED_ORIGINS", "").split(",") 
+    if v.strip()
+]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SAMESITE = 'Lax'
 
 # Application definition
 
@@ -37,6 +84,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # app apps
+    "app_api",
+    "app_pages",
 ]
 
 MIDDLEWARE = [
@@ -47,6 +97,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # app middleware
+    'backend.middleware.StreamlitAccessMiddleware',
 ]
 
 ROOT_URLCONF = 'app.urls'
@@ -54,10 +106,11 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -73,9 +126,25 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME'),
+        'USER': config('BACKEND_DJANGO_DB_USER'),
+        'PASSWORD': config('BACKEND_DJANGO_DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
+        'OPTIONS': {
+            #'options': f"-c search_path={config('BACKEND_DJANGO_DB_SCHEMA')}",
+            'connect_timeout': 10, 
+            'sslmode': 'require', 
+            'client_encoding': 'UTF8',   
+        },
+        'CONN_MAX_AGE': 300,
+        'ATOMIC_REQUESTS': True,
     }
 }
 
