@@ -92,7 +92,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # app middleware
-    'backend.middleware.StreamlitAccessMiddleware',
+    'app_pages.middleware.StreamlitAccessMiddleware',
 ]
 
 ROOT_URLCONF = 'app.urls'
@@ -185,3 +185,17 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Settings for production
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SECURE_HSTS_SECONDS = 31536000
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_BROWSER_XSS_FILTER = True
+
+# Settings for Fronted (Streamlit) proxy
+STREAMLIT_INTERNAL_URL = config('FRONTEND_STREAMLIT_INTERNAL_URL')
+STREAMLIT_PUBLIC_URL = '/streamlit/'
