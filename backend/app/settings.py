@@ -49,8 +49,6 @@ elif os.path.exists(ENV_DEV):
 elif os.path.exists(SETTINGS_DIR_ENV_DEV):
     load_dotenv(SETTINGS_DIR_ENV_DEV)
     print("SETTINGS_DIR_ENV_DEV")
-else:
-    print("SSSSSSSSSSSSSSSSSS")
     
 
 ALLOWED_HOSTS = [
