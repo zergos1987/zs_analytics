@@ -26,8 +26,6 @@
     {% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}/media/app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
 	{% block webmanifest %}{% if page_settings.webmanifest %}/media/app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
 
-    <!-- BASE FONT -->
-    {% block base_font %}{{ block.super }}{% endblock base_font %}
 	<!-- BASE CSS -->
 	{% block base_css %}{{ block.super }}{% endblock base_css %}
     <!-- PAGE CSS -->

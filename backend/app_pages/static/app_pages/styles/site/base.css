@@ -1,7 +1,7 @@
 /* init */
 
 /* fonts */
-/* @import url('base_fonts.css'); */
+@import url('base_fonts.css');
 
 body {
     font-family: 'Roboto', sans-serif;
