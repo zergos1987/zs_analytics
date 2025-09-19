@@ -5,12 +5,12 @@
 
 
 
-<!-- doctype html lang -->
+<!-- DOCTYPE -->
 	{% block lang %}{% if page_settings.lang %}{{ page_settings.lang }}{% else %}{{ block.super }}{% endif %}{% endblock lang %}
-<!-- end doctype html lang -->
+<!-- END DOCTYPE -->
 
 
-<!-- head -->
+<!-- HEAD -->
 	{% block charset %}{% if page_settings.charset %}{{ page_settings.charset }}{% else %}{{ block.super }}{% endif %}{% endblock charset %}
 
 	{% block viewport %}{{ block.super }}{% endblock viewport %}
@@ -21,17 +21,23 @@
 	
 	{% block title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock title %}
 	
+    {% block icon_png %}{% if page_settings.icon_png %}/media/app_pages/images/site/favicon/{{ page_settings.icon_png }}{% else %}{{ block.super }}{% endif %}{% endblock icon_png %}
+    {% block icon_svg %}{% if page_settings.icon_svg %}/media/app_pages/images/site/favicon/{{ page_settings.icon_svg }}{% else %}{{ block.super }}{% endif %}{% endblock icon_svg %}
 	{% block icon %}{% if page_settings.icon %}/media/app_pages/images/site/favicon/{{ page_settings.icon }}{% else %}{{ block.super }}{% endif %}{% endblock icon %}
-	<!-- css -->
-	{% block head_css %}{{ block.super }}{% endblock head_css %}
-	    <!-- APP CSS -->
-	    {% block css %}{{ block.super }}
-		<link href="{% static 'app_opensource_dashboards/origin/css/index.css' %}" rel="stylesheet">
-		{% endblock css %}
-	    <!-- APP VENDOR CSS -->
-	    {% block vendor_css %}{{ block.super }}{% endblock vendor_css %}
-	<!-- css -->
-<!-- end head -->
+    {% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}/media/app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
+	{% block webmanifest %}{% if page_settings.webmanifest %}/media/app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
+
+    <!-- BASE FONT -->
+    {% block base_font %}{{ block.super }}{% endblock base_font %}
+	<!-- BASE CSS -->
+	{% block base_css %}{{ block.super }}{% endblock base_css %}
+    <!-- PAGE CSS -->
+    {% block page_css %}{{ block.super }}
+    <link href="{% static 'app_pages/styles/site/index.css' %}" rel="stylesheet">{% endblock page_css %}
+    <!-- PAGE PACKAGES CSS -->
+    {% block page_packages_css %}{{ block.super }}{% endblock page_packages_css %}
+	<!-- CSS -->
+<!-- END HEAD -->
 
 
 <!-- body -->

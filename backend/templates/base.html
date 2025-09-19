@@ -6,29 +6,33 @@
         <meta http-equiv="Content-Type" content="text/html; charset={% block charset_text %}utf-8{% endblock charset_text %}"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="pragma" content="no-cache" />
-        
         <meta name="viewport" content="{% block viewport %}width=device-width, initial-scale=1.0{% endblock viewport %}">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <meta name="description" content="{% block description %}Unset page description{% endblock description %}">
         <meta name="author" content="{% block author %}Unset page author{% endblock author %}">
-        <title>{% block title %}Unset page title{% endblock title %}</title>
-        <link rel="shortcut icon" href="{% block icon %}{% static 'app_pages/images/site/favicon.ico' %}{% endblock icon %}" type="image/x-icon">
-        <link rel="canonical" href="https://wwww.{{ request.get_host }}/">
-        <link rel="alternate" media="handheld" href="https://m.{{ request.get_host }}/">
+        <link rel="canonical" href="{{request.scheme}}://wwww.{{ request.get_host }}/">
+        <link rel="alternate" media="handheld" href="{{request.scheme}}://m.{{ request.get_host }}/">
         <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.{{ request.get_host }}/">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
-        <!-- BASE CSS
-        <link href="{% static 'app_zs_admin/origin/res/font/google_robot_fonts.css' %}" rel="stylesheet">
-        <link href="{% static 'app_zs_admin/origin/res/font/google_opensans_oswald_fonts.css' %}" rel="stylesheet">
-        <link href="{% static 'app_zs_admin/origin/css/base.css' %}" rel="stylesheet">
-        {% block head_css %}
-        {% endblock head_css %}
-            <!-- APP CSS -->
-            {% block css %}
-            {% endblock css %}
-            <!-- APP VENDOR CSS -->
-            {% block vendor_css %}
-            {% endblock vendor_css %}
+        <title>{% block title %}Unset page title{% endblock title %}</title>
+        <link rel="icon" type="image/png" href="{% block icon_png %}{% static 'app_pages/images/site/favicon-96x96.png' %}{% endblock icon_png %}" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{% block icon_svg %}{% static 'app_pages/images/site/favicon.svg' %}{% endblock icon_svg %}" />
+        <link rel="shortcut icon" type="image/x-icon" href="{% block icon %}{% static 'app_pages/images/site/favicon.ico' %}{% endblock icon %}"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="{% block icon_apple_touch %}{% static 'app_pages/images/site/apple-touch-icon.png' %}{% endblock icon_apple_touch %}" />
+        <meta name="apple-mobile-web-app-title" content="{% block title %}Unset page title{% endblock title %}" />
+        <link rel="manifest" href="{% block webmanifest %}{% static 'app_pages/images/site/site.webmanifest' %}{% endblock webmanifest %}" />
+        <!-- BASE FONT -->
+        {% block base_font %}
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+        <link href="{% static 'app_pages/font/site/google_robot_fonts.css' %}"  rel="stylesheet">
+        <link href="{% static 'app_pages/font/site/google_opensans_oswald_fonts.css' %}" rel="stylesheet">{% endblock base_css %}
+        <!-- BASE CSS -->
+        {% block base_css %}
+        <link href="{% static 'app_pages/styles/site/base.css' %}" rel="stylesheet">{% endblock base_font %}
+        <!-- PAGE CSS -->
+        {% block page_css %}{% endblock page_css %}
+        <!-- PAGE PACKAGES CSS -->
+        {% block page_packages_css %}{% endblock page_packages_css %}
+
     </head>
 
     <body>
