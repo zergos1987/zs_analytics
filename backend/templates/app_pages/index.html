@@ -4,7 +4,6 @@
 {% load template_filters %}
 
 
-
 <!-- DOCTYPE -->
 	{% block lang %}{% if page_settings.lang %}{{ page_settings.lang }}{% else %}{{ block.super }}{% endif %}{% endblock lang %}
 <!-- END DOCTYPE -->
@@ -32,15 +31,14 @@
 	<!-- BASE CSS -->
 	{% block base_css %}{{ block.super }}{% endblock base_css %}
     <!-- PAGE CSS -->
-    {% block page_css %}{{ block.super }}
-    <link href="{% static 'app_pages/styles/site/index.css' %}" rel="stylesheet">{% endblock page_css %}
+    {% block page_css %}{{ block.super }}<link href="{% static 'app_pages/styles/site/index.css' %}" rel="stylesheet">{% endblock page_css %}
     <!-- PAGE PACKAGES CSS -->
     {% block page_packages_css %}{{ block.super }}{% endblock page_packages_css %}
 	<!-- CSS -->
 <!-- END HEAD -->
 
 
-<!-- body -->
+<!-- BODY -->
 	<!-- container display mode --> <!-- active --> <!-- fixed --> <!-- container-aside-left-disabled -->  <!-- container-header-disabled --> <!--  container-main-padding-off --> 
 	{% block container_display_mode_classname %}
 		{% spaceless %}
@@ -156,14 +154,11 @@
 
 	<!-- end container display mode --> 
 
-	<!-- block JS --> 
-    {% block head_js %}{{ block.super }}{% endblock head_js %}
-        <!-- BASE JS -->
-        <!-- APP JS -->
-        {% block js %}{{ block.super }}
-        <script type="application/javascript" src="{% static 'app_opensource_dashboards/origin/js/index.js'%}"></script>
-        {% endblock js %}
-        <!-- APP VENDOR JS -->
-        {% block vendor_js %}{{ block.super }}{% endblock vendor_js %}
-    <!-- end block JS --> 
-<!-- end body -->
+	<!-- BASE JS -->
+    {% block base_js %}{{ block.super }}{% endblock base_js %}
+    <!-- PAGE JS -->
+    {% block page_js %}{{ block.super }}<script type="application/javascript" src="{% static 'app_pages/scripts/site/index.js'%}"></script>
+    {% endblock page_js %}
+    <!-- PAGE PACKAGES JS -->
+    {% block page_packages_js %}{{ block.super }}{% endblock page_packages_js %}
+<!-- END BODY -->
