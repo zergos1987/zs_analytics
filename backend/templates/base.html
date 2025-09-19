@@ -20,12 +20,9 @@
         <meta name="apple-mobile-web-app-title" content="{% block title %}Unset page title{% endblock title %}" />
         <link rel="manifest" href="{% block webmanifest %}{% static 'app_pages/images/site/site.webmanifest' %}{% endblock webmanifest %}" />
         <!-- BASE FONT -->
-        {% block base_font %}
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
-        <link href="{% static 'app_pages/fonts/site/google_robot_fonts.css' %}"  rel="stylesheet">
-        <link href="{% static 'app_pages/fonts/site/google_opensans_oswald_fonts.css' %}" rel="stylesheet">{% endblock base_css %}
+        {% block base_font %}<link href="{% static 'app_pages/styles/site/base_fonts.css' %}"  rel="stylesheet">{% endblock base_font %}
         <!-- BASE CSS -->
-        {% block base_css %}<link href="{% static 'app_pages/styles/site/base.css' %}" rel="stylesheet">{% endblock base_font %}
+        {% block base_css %}<link href="{% static 'app_pages/styles/site/base.css' %}" rel="stylesheet">{% endblock base_css %}
         <!-- PAGE CSS -->
         {% block page_css %}{% endblock page_css %}
         <!-- PAGE PACKAGES CSS -->
