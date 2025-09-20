@@ -20,11 +20,17 @@
 	
 	{% block title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock title %}
 	
-    {% block icon_png %}{% if page_settings.icon_png %}/media/app_pages/images/site/favicon/{{ page_settings.icon_png }}{% else %}{{ block.super }}{% endif %}{% endblock icon_png %}
-    {% block icon_svg %}{% if page_settings.icon_svg %}/media/app_pages/images/site/favicon/{{ page_settings.icon_svg }}{% else %}{{ block.super }}{% endif %}{% endblock icon_svg %}
-	{% block icon %}{% if page_settings.icon %}/media/app_pages/images/site/favicon/{{ page_settings.icon }}{% else %}{{ block.super }}{% endif %}{% endblock icon %}
-    {% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}/media/app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
-	{% block webmanifest %}{% if page_settings.webmanifest %}/media/app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
+    {% block icon_png %}{% if page_settings.icon_png %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_png }}{% else %}{{ block.super }}{% endif %}{% endblock icon_png %}
+
+    {% block icon_svg %}{% if page_settings.icon_svg %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_svg }}{% else %}{{ block.super }}{% endif %}{% endblock icon_svg %}
+
+	{% block icon %}{% if page_settings.icon %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon }}{% else %}{{ block.super }}{% endif %}{% endblock icon %}
+
+    {% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
+
+    {% block apple_mobile_title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock apple_mobile_title %}
+
+	{% block webmanifest %}{% if page_settings.webmanifest %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
 
 	<!-- BASE CSS -->
 	{% block base_css %}{{ block.super }}{% endblock base_css %}

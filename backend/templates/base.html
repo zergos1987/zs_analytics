@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html lang="{% block lang %}ru{% endblock lang %}">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset={% block charset_text %}utf-8{% endblock charset_text %}"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset={% block charset %}utf-8{% endblock charset %}"/>
         <meta http-equiv="pragma" content="no-cache" />
-        <meta name="viewport" content="{% block viewport %}width=device-width, initial-scale=1.0{% endblock viewport %}">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="viewport" content="{% block viewport %}width=device-width, initial-scale=1.0{% endblock viewport %}">
         <meta name="description" content="{% block description %}Unset page description{% endblock description %}">
         <meta name="author" content="{% block author %}Unset page author{% endblock author %}">
         <link rel="canonical" href="{{request.scheme}}://wwww.{{ request.get_host }}/">
@@ -17,7 +16,7 @@
         <link rel="icon" type="image/svg+xml" href="{% block icon_svg %}{% static 'app_pages/images/site/favicon.svg' %}{% endblock icon_svg %}" />
         <link rel="shortcut icon" type="image/x-icon" href="{% block icon %}{% static 'app_pages/images/site/favicon.ico' %}{% endblock icon %}"/>
         <link rel="apple-touch-icon" sizes="180x180" href="{% block icon_apple_touch %}{% static 'app_pages/images/site/apple-touch-icon.png' %}{% endblock icon_apple_touch %}" />
-        <meta name="apple-mobile-web-app-title" content="{% block title %}Unset page title{% endblock title %}" />
+        <meta name="apple-mobile-web-app-title" content="{% block apple_mobile_title %}Unset page title{% endblock apple_mobile_title %}" />
         <link rel="manifest" href="{% block webmanifest %}{% static 'app_pages/images/site/site.webmanifest' %}{% endblock webmanifest %}" />
         <!-- BASE CSS -->
         {% block base_css %}<link href="{% static 'app_pages/styles/site/base.css' %}" rel="stylesheet">{% endblock base_css %}
@@ -29,7 +28,7 @@
 
     <body>
         <header>{% block body_header %}{% endblock body_header %}</header>
-        <main>{% block main_section %}{% endblock main_section %}</main>
+        <main>{% block body_main %}{% endblock body_main %}</main>
         <footer>{% block body_footer %}{% endblock body_footer %}</footer>
         <!-- BASE JS -->
         {% block base_js %}<script type="application/javascript" src="{% static 'app_pages/packages/jquery/3.7.1/jquery-3.7.1.js'%}"></script>
