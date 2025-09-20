@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 from decouple import config
 import dj_database_url
-from pathlib import Path
 from dotenv import load_dotenv
 
 
@@ -39,7 +38,7 @@ elif os.path.exists(ENV_DEV):
 elif os.path.exists(ENV):
     load_dotenv(ENV)
 elif os.path.exists(ENV_PROD_EXAMPLE):
-    load_dotenv(ENV_DEV_EXAMPLE)
+    load_dotenv(ENV_PROD_EXAMPLE)
 elif os.path.exists(ENV_DEV_EXAMPLE):
     load_dotenv(ENV_DEV_EXAMPLE)
 
