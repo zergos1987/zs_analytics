@@ -8,7 +8,7 @@
         <meta name="viewport" content="{% block viewport %}width=device-width, initial-scale=1.0{% endblock viewport %}">
         <meta name="description" content="{% block description %}Unset page description{% endblock description %}">
         <meta name="author" content="{% block author %}Unset page author{% endblock author %}">
-        <link rel="canonical" href="{{request.scheme}}://wwww.{{ request.get_host }}/">
+        <link rel="canonical" href="{{request.scheme}}://www.{{ request.get_host }}/">
         <link rel="alternate" media="handheld" href="{{request.scheme}}://m.{{ request.get_host }}/">
         <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.{{ request.get_host }}/">
         <title>{% block title %}Unset page title{% endblock title %}</title>
