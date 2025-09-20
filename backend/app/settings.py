@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 import os
 from pathlib import Path
-from decouple import config, Csv
+from decouple import config
 import dj_database_url
 from pathlib import Path
 from dotenv import load_dotenv
@@ -24,35 +24,36 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
+# ENV file init
+SETTINGS_DIR = BASE_DIR.parent / "settings" / "env"
+ENV_PROD = SETTINGS_DIR / '.env.prod'
+ENV_DEV = SETTINGS_DIR / '.env.dev'
+ENV = SETTINGS_DIR / '.env'
+ENV_PROD_EXAMPLE = SETTINGS_DIR / '.env.prod.example'
+ENV_DEV_EXAMPLE = SETTINGS_DIR / '.env.dev.example'
+
+if os.path.exists(ENV_PROD):
+    load_dotenv(ENV_PROD)
+elif os.path.exists(ENV_DEV):
+    load_dotenv(ENV_DEV)
+elif os.path.exists(ENV):
+    load_dotenv(ENV)
+elif os.path.exists(ENV_PROD_EXAMPLE):
+    load_dotenv(ENV_DEV_EXAMPLE)
+elif os.path.exists(ENV_DEV_EXAMPLE):
+    load_dotenv(ENV_DEV_EXAMPLE)
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("BACKEND_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('BACKEND_DEBUG', default=False, cast=bool)
-
-# .env 
-SETTINGS_DIR = BASE_DIR.parent / "settings" / "env"
-ENV_PROD = '.env'
-SETTINGS_DIR_ENV_PROD = SETTINGS_DIR / ENV_PROD
-ENV_DEV = '.env.example'
-SETTINGS_DIR_ENV_DEV = SETTINGS_DIR / ENV_DEV
-
-if os.path.exists(ENV_PROD):
-    load_dotenv(ENV_PROD)
-elif os.path.exists(SETTINGS_DIR_ENV_PROD):
-    load_dotenv(SETTINGS_DIR_ENV_PROD)
-elif os.path.exists(ENV_DEV):
-    load_dotenv(ENV_DEV)
-elif os.path.exists(SETTINGS_DIR_ENV_DEV):
-    load_dotenv(SETTINGS_DIR_ENV_DEV)
-    
+DEBUG = config('BACKEND_DEBUG', default=False, cast=bool)    
 
 ALLOWED_HOSTS = [
     v.strip() for v in 
     os.environ.get("BACKEND_ALLOWED_HOSTS", "").split(",") 
     if v.strip()
 ]
-
 # Settings for working behind (nginx)
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -78,7 +79,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # app apps
+    # custom apps
     "app_api",
     "app_pages",
 ]
@@ -91,7 +92,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # app middleware
+    # custom middleware
     'app_pages.middleware.StreamlitAccessMiddleware',
 ]
 
@@ -141,7 +142,7 @@ DATABASES = {
         'ATOMIC_REQUESTS': True,
     }
 }
-
+ 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 

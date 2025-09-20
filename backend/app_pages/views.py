@@ -13,8 +13,6 @@ logger = logging.getLogger(__name__)
 
 # SPA dynamic url pages view
 
-#@login_required
-#@permission_required('app_zs_admin.view_app')
 def index(request):
 	context = {
 		'page_settings': 0,
