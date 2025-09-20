@@ -5,52 +5,50 @@
 
 
 <!-- DOCTYPE -->
-	{% block lang %}{% if page_settings.lang %}{{ page_settings.lang }}{% else %}{{ block.super }}{% endif %}{% endblock lang %}
-<!-- END DOCTYPE -->
-
+{% block lang %}{% if page_settings.lang %}{{ page_settings.lang }}{% else %}{{ block.super }}{% endif %}{% endblock lang %}
 
 <!-- HEAD -->
-	{% block charset %}{% if page_settings.charset %}{{ page_settings.charset }}{% else %}{{ block.super }}{% endif %}{% endblock charset %}
+{% block charset %}{% if page_settings.charset %}{{ page_settings.charset }}{% else %}{{ block.super }}{% endif %}{% endblock charset %}
 
-	{% block viewport %}{{ block.super }}{% endblock viewport %}
-	
-	{% block description %}{% if page_settings.description %}{{ page_settings.description }}{% else %}{{ block.super }}{% endif %}{% endblock description %}
-	
-	{% block author %}{% if page_settings.author %}{{ page_settings.author }}{% else %}{{ block.super }}{% endif %}{% endblock author %}
-	
-	{% block title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock title %}
-	
-    {% block icon_png %}{% if page_settings.icon_png %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_png }}{% else %}{{ block.super }}{% endif %}{% endblock icon_png %}
+{% block viewport %}{{ block.super }}{% endblock viewport %}
 
-    {% block icon_svg %}{% if page_settings.icon_svg %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_svg }}{% else %}{{ block.super }}{% endif %}{% endblock icon_svg %}
+{% block description %}{% if page_settings.description %}{{ page_settings.description }}{% else %}{{ block.super }}{% endif %}{% endblock description %}
 
-	{% block icon %}{% if page_settings.icon %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon }}{% else %}{{ block.super }}{% endif %}{% endblock icon %}
+{% block author %}{% if page_settings.author %}{{ page_settings.author }}{% else %}{{ block.super }}{% endif %}{% endblock author %}
 
-    {% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
+{% block title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock title %}
 
-    {% block apple_mobile_title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock apple_mobile_title %}
+{% block icon_png %}{% if page_settings.icon_png %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_png }}{% else %}{{ block.super }}{% endif %}{% endblock icon_png %}
 
-	{% block webmanifest %}{% if page_settings.webmanifest %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
+{% block icon_svg %}{% if page_settings.icon_svg %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_svg }}{% else %}{{ block.super }}{% endif %}{% endblock icon_svg %}
 
-	<!-- BASE CSS -->
-	{% block base_css %}{{ block.super }}{% endblock base_css %}
-    <!-- PAGE CSS -->
-    {% block page_css %}{{ block.super }}<link href="{% static 'app_pages/styles/site/index.css' %}" rel="stylesheet">{% endblock page_css %}
-    <!-- PAGE PACKAGES CSS -->
-    {% block page_packages_css %}{{ block.super }}{% endblock page_packages_css %}
-	<!-- CSS -->
+{% block icon %}{% if page_settings.icon %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon }}{% else %}{{ block.super }}{% endif %}{% endblock icon %}
+
+{% block icon_apple_touch %}{% if page_settings.icon_apple_touch %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.icon_apple_touch }}{% else %}{{ block.super }}{% endif %}{% endblock icon_apple_touch %}
+
+{% block apple_mobile_title %}{% if page_settings.title %}{{ page_settings.title }}{% else %}{{ block.super }}{% endif %}{% endblock apple_mobile_title %}
+
+{% block webmanifest %}{% if page_settings.webmanifest %}{% get_media_prefix %}app_pages/images/site/favicon/{{ page_settings.webmanifest }}{% else %}{{ block.super }}{% endif %}{% endblock webmanifest %}
+
+<!-- BASE CSS -->
+{% block base_css %}{% endblock base_css %}
+<!-- PAGE CSS -->
+{% block page_css %}{{ block.super }}<link href="{% static 'app_pages/styles/site/index.css' %}" rel="stylesheet">{% endblock page_css %}
+<!-- PAGE PACKAGES CSS -->
+{% block page_packages_css %}{{ block.super }}{% endblock page_packages_css %}
+<!-- CSS -->        
 <!-- END HEAD -->
 
-
 <!-- BODY -->
-    {% block body_header %}{{ block.super }}{% endblock body_header %}
-    <section id="{{ page_settings.id }}">{% block body_main %}{{ block.super }}{% endblock body_main %}</section>
-    {% block body_footer %}{{ block.super }}{% endblock body_footer %}
-	<!-- BASE JS -->
-    {% block base_js %}{{ block.super }}{% endblock base_js %}
-    <!-- PAGE JS -->
-    {% block page_js %}{{ block.super }}<script type="application/javascript" src="{% static 'app_pages/scripts/site/index.js'%}"></script>
-    {% endblock page_js %}
-    <!-- PAGE PACKAGES JS -->
-    {% block page_packages_js %}{{ block.super }}{% endblock page_packages_js %}
+{% block body_header %}{{ block.super }}{% endblock body_header %}
+<section id="{{ page_settings.id }}">{% block body_main %}{{ block.super }}{% endblock body_main %}</section>
+{% block body_footer %}{{ block.super }}{% endblock body_footer %}
+<!-- BASE JS -->
+{% block base_js %}{% endblock base_js %}
+<!-- PAGE JS -->
+{% block page_js %}{{ block.super }}<script type="application/javascript" src="{% static 'app_pages/scripts/site/index.js'%}"></script>
+{% endblock page_js %}
+<!-- PAGE PACKAGES JS -->
+{% block page_packages_js %}{{ block.super }}{% endblock page_packages_js %}
 <!-- END BODY -->
+<!-- END DOCTYPE -->
