@@ -15,14 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, re_path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from app_pages import views as pages_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('api/', include('app_api.urls')),
     path('', include('app_pages.urls')),
+
+    # Streamlit proxy - should be after all main path's 
+    path('streamlit/', pages_views.streamlit_proxy, name='streamlit-proxy'),
+    re_path(r'^streamlit/(?P<path>.*)$', pages_views.streamlit_proxy),
 ]
 
 # Serving static files in development

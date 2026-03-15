@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 
-WORKDIR /app
+WORKDIR /zs_analytics
 
 # Installing system dependencies
 RUN apt-get update && apt-get install -y \
@@ -19,7 +19,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copying project
-COPY . .
+COPY ../../backend/ .
 
 # Creating directory for static and media
 RUN mkdir -p static media
